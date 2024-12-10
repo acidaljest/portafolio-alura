@@ -1,0 +1,625 @@
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+
+
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #d3d3d3;
+    padding-right: 140px;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+
+
+
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion{
+    display: flex;
+    place-items: center;
+}
+
+.redes{
+    display: flex;
+    gap: 3rem;
+    font-size: larger;
+}
+
+.presentacion__contenedor{
+    width: 60%;
+}
+.container-foto{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.presentacion__subtitulo{
+    font-size: larger;
+}
+
+.presentacion__foto{
+    border-radius: 50%;
+}
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.full-block {
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+.contenedor-textos{
+    display: block;
+    margin-right: 40%;
+    display: contents;
+}
+
+.sobre-mi__texto{
+    font-size: larger;
+}
+
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+.full-block{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.oliwi{
+    background-color: #d3d3d3;    
+    display: flex;
+    flex-direction: column;
+    }
+
+.lista-block{
+    background-color: #d3d3d3;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    gap: 1rem;
+    padding-left:0;
+}
+
+.lista-elemento{
+    background-color: #d7d0dd;
+    flex: 1;
+    position: relative;
+}
+
+
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones__lista{
+    display: flex;
+    gap: 5rem;
+}
+
+.aficiones__icono{
+    background-color:#d7d0dd;
+}
+
+.small-icon{
+    width: 34px;
+    height: 34px;
+}
+
+
+
+/*------------------------------ Sección de Académica --------------------------------*/
+
+.formacion__lista{
+    display: flex;
+    gap: 1rem;
+    background-color: #d3d3d3;
+    padding: 0; 
+}
+
+.box-formacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 300px;
+}
+ 
+.formacion__icono{
+    display: flex;
+    width: 130px;
+    height: 130px;
+    justify-items: center;
+}
+
+.formacion__elemento{
+    flex: 1;
+}
+
+
+
+
+/*------------------------------ Sección de Proyectos ---------------------------------*/
+.full-block-demo-teclado{
+    background-color: #d3d3d3;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-teclado{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.teclado{
+    background-color: #b7acc2;
+}
+
+
+
+
+.full-block-demo-contador {
+    background-color: #ebecee;
+
+}
+
+.heading-section{
+    width: 100%;
+    text-align: center;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+/*------------------------------ Sección de Contacto -----------------------------*/
+.contacto{
+    background-color: #EAF2FD;
+    padding-bottom: 5%;
+    justify-items: center;
+    height: auto;
+}
+
+.box-container-contact{
+    display: grid;
+    gap: 8px;
+    gap: 5rem;
+    align-items: center;
+    height: 80px;
+}
+
+.contacto__formulario{
+    background-color: #EAF2FD;
+    display: grid;
+    gap: 8px;
+}
+
+.box-contact{
+    display: flex;
+}
+
+.contacto__boton{
+    display: flex;
+    background-color: #2A7AE4;
+    color: #FFFFFF;
+    border-bottom: #2A7AE4;
+    border-radius: 2px;
+}
+
+
+
+
+/* ------------------------------------ Compartido -----------------------------------*/
+/* Titulos */
+.titulo-h2{
+    text-align: center;
+    font-size: large;
+    color: #4c3f79;
+}
+
+
+
+/* Compartido habilidades y aficciones */
+.box-elemento{
+    background-color: #FFFFF;
+    width: 150px;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 5%;
+}
+
+.full-block{
+background-color: #d3d3d3;
+
+}
+
+
+
+/* ----------------------------------- Responsividad ----------------------------------*/
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+        margin-inline-start: 10%;
+    }
+
+ 
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 5rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+/* ------------------------------------- Demos ---------------------------------------*/
+/* Demo teclado */
+.teclado {
+  border-radius: 30px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 20px;
+  margin: 20px;
+}
+
+.tecla {
+  background-color: #d3d3d3;
+  border-radius: 30px;
+  box-shadow: 2px 1px 0 #0086f7;
+  color: #a495da;
+  cursor: pointer;
+  height: 120px;
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 120px;
+  text-align: center;
+  width: 120px;
+}
+
+.tecla.activa,
+.tecla:active {
+  border: 4px solid;
+  box-shadow: 3px 3px 0 inset;
+  outline: none;
+}
+
+.tecla.focus,
+.tecla:focus {
+  outline: none;
+  box-shadow: 1px 1px 10px;
+}
+
+.tecla.active:focus,
+.tecla:active:focus {
+  box-shadow: 3px 3px 0 inset, 1px 1px 10px;
+}
+
+/* Demo Contador*/
+.full-block-demo-contador{
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    min-height: 100vh;
+    font-size: 10px;
+}
+
+body {
+    min-height: 100vh;
+    background: url("/imagenes/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Unbounded', cursive;
+}
+
+.app__logo-figure {
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0;
+    background-color: #89a5ca;
+    border-radius: 80px;
+}
+
+.app__section-banner-container {
+    width: 99rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap; 
+    background-color: #d3d3d3;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.app__title {
+    line-height: 150%;
+    font-size: 5.2rem;
+    font-style: normal;
+    color: var(--color-secondary);
+    font-weight: 200;
+    max-width: 46rem;
+}
+
+.app__title-strong {
+    font-weight: 600;
+}
+
+.app__section-card-container {
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    
+}
+
+.app__card {
+    border-radius: 3.2rem;
+    border: 0.2rem solid var(--azul-royal);
+    background: var(--fundo-card-timer);
+    padding: 2.4rem;
+    margin: 8rem 0;
+    width: 59rem;
+    max-width: 90%;
+}
+
+.app__card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    background-color: #a495da;
+    border-radius: 30px;
+}
+
+.app__card-button {
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    background: none;
+    padding: 0.8rem;
+    color: var(--color-secondary);
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.app__card-button.active {
+    border-radius: 0.8rem;
+    background: #0086f7;
+    font-weight: 600;
+}
+
+.app__card-timer {
+    color: var(--color-secondary);
+    text-align: center;
+    font-family: Unbounded;
+    font-size: 12rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 3.2rem;
+    text-align: center;
+}
+
+.app__card-list-label {
+    color: var(--color-secondary);
+    font-family: Montserrat;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.app__card-primary-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__card-primary-button {
+    padding: 0.8rem;
+    width: 12rem;
+    color: var(--color-secondary);
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 3.2rem;
+    background: #a495da;
+    margin-top: 3.2rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.app__footer {
+    display: flex;
+    width: 100%;
+    padding: 2.8rem 6rem;
+    justify-content: center;
+    align-items: center;
+    background: #010B15;
+}
+
+.app__footer-text {
+    color: rgba(46, 43, 43, 0.8);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 50px;
+}
+
+/* toggle */
+.toggle {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch {
+    display: inline-block;
+    background: #ccc;
+    border-radius: 1.6rem;
+    width: 5.8rem;
+    height: 3.2rem;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before, .toggle-switch:after {
+    content: "";
+}
+
+.toggle-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.4rem;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background: var(--lils);
+}
+
+.toggle-checkbox:checked + .toggle-switch:before {
+    left: 3rem;
+}
+
+.toggle-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+
+/* [data-contexto="enfoque"] {
+    --main-bg-color: linear-gradient(180deg, #8B1FF8 0%, #041832 48.44%, #01080E 100%); */
+
+
+/* [data-contexto="descanso-corto"] {
+    --main-bg-color: linear-gradient(180deg, #0F725C 0%, #041832 48.44%, #01080E 100%);
+} */
+
+/* [data-contexto="descanso-largo"] {
+    --main-bg-color: linear-gradient(180deg, #1875E9 0%, #041832 48.44%, #01080E 100%);
+} */
+
+
+
+/* Para Tablets */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .app__section-banner-container {
+        width: 48rem;
+    }
+}
+
+/* Para Celulares */
+@media (max-width: 767px) {
+    .app__section-banner-container {
+        width: 32rem;
+    }
+
+    .app__title {
+        font-size: 2.6rem;
+    }
+
+    .app__card-timer {
+        font-size: 6rem;
+    }
+}
